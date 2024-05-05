@@ -1,0 +1,65 @@
+theme = "base16_transparent"
+
+[editor]
+auto-save = true
+bufferline = "always"
+color-modes = true
+completion-timeout = 50
+line-number = "relative"
+true-color = true
+shell = ["zsh", "-c"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.statusline]
+left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
+center = ["file-base-name", "file-modification-indicator"]
+right = [
+  "primary-selection-length",
+  "separator",
+  "position",
+  "separator",
+  "spacer",
+  "file-line-ending",
+  "spacer",
+  "separator",
+  "spacer",
+  "file-type",
+  "spacer",
+]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+
+[keys.normal]
+H = ":buffer-previous"
+L = ":buffer-next"
+C-w = ":w"
+C-f = ":fmt"
+C-r = "redo"
+
+[keys.normal.space]
+q = ":wqa"
+x = ":bc"
+W = ":w"
+e = [":w", ":sh cargo run -q --color=always &> rifo"]
+
+[keys.normal.space.";"]
+f = ":fmt"
+o = ":config-open"
+r = [":w", ":config-reload"]
