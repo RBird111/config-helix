@@ -1,4 +1,4 @@
-theme = "base16_transparent"
+theme = "my-default"
 
 [editor]
 auto-save = true
@@ -16,10 +16,6 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-
-[editor.indent-guides]
-render = true
-character = "▏"
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
@@ -63,3 +59,4 @@ e = [":w", ":sh cargo run -q --color=always &> rifo"]
 f = ":fmt"
 o = ":config-open"
 r = [":w", ":config-reload"]
+t = ":open ~/.config/helix/themes/my-default.toml"

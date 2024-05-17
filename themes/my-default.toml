@@ -24,8 +24,12 @@
 "ui.statusline.select" = { fg = "black", bg = "magenta" }
 "ui.help" = { fg = "light-gray" }
 "ui.cursor" = { modifiers = ["reversed"] }
-"ui.cursor.match" = { fg = "light-yellow", underline = { color = "light-yellow", style = "line" } }
-"ui.cursor.primary" = { modifiers = ["reversed", "slow_blink"] }
+"ui.cursor.match" = { fg = "yellow", underline = { color = "yellow", style = "line" }, modifiers = [
+  "bold",
+] }
+
+# "ui.cursor.primary" = { modifiers = ["reversed", "slow_blink"] }
+"ui.cursor.primary" = { fg = "black", bg = "white", modifiers = ["bold"] }
 "ui.cursor.secondary" = { modifiers = ["reversed"] }
 "ui.virtual.ruler" = { bg = "gray" }
 "ui.virtual.whitespace" = "gray"
