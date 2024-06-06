@@ -45,9 +45,10 @@ tab = "all"
 [keys.normal]
 H = ":buffer-previous"
 L = ":buffer-next"
-C-w = ":w"
+C-c = "increment"
 C-f = ":fmt"
 C-r = "redo"
+C-w = ":w"
 
 [keys.normal.space]
 q = ":wqa"

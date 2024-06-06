@@ -17,7 +17,7 @@
 "ui.window" = { fg = "gray" }
 "ui.selection" = { bg = "gray" }
 "comment" = { fg = "light-gray", modifiers = ["dim", "italic"] }
-"ui.statusline" = { fg = "white" }
+"ui.statusline" = { fg = "white", bg = "gray" }
 "ui.statusline.inactive" = { fg = "gray" }
 "ui.statusline.normal" = { fg = "black", bg = "blue" }
 "ui.statusline.insert" = { fg = "black", bg = "green" }
@@ -38,7 +38,7 @@
 "ui.virtual.inlay-hint.parameter" = { fg = "white", bg = "gray" }
 "ui.virtual.inlay-hint.type" = { fg = "white", bg = "gray" }
 "ui.virtual.wrap" = "gray"
-"ui.virtual.jump-label" = { fg = "blue", modifiers = ["bold", "underlined"] }
+"ui.virtual.jump-label" = { fg = "#FFA500", modifiers = ["bold", "underlined"] }
 
 "variable" = { fg = "red" }
 "constant.numeric" = "yellow"
