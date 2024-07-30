@@ -16,7 +16,7 @@
 "ui.popup" = { fg = "white", bg = "gray" }
 "ui.window" = { fg = "gray" }
 "ui.selection" = { bg = "gray" }
-"comment" = { fg = "light-gray", modifiers = ["dim", "italic"] }
+"comment" = { fg = "light-gray", modifiers = ["dim"] }
 "ui.statusline" = { fg = "white", bg = "gray" }
 "ui.statusline.inactive" = { fg = "gray" }
 "ui.statusline.normal" = { fg = "black", bg = "blue" }
@@ -47,13 +47,15 @@
 "constructor" = "light-blue"
 "function" = { fg = "light-blue", modifiers = ["bold"] }
 "keyword" = "light-magenta"
-"label" = "light-magenta"
+"label" = { fg = "cyan", modifiers = ["bold", "underlined", "italic"] }
 "namespace" = "yellow"
 "special" = "light-blue"
 "string" = "light-green"
+"string.special" = "cyan"
+"string.regexp" = "yellow"
 "type" = "light-yellow"
-# "variable" = { fg = "red" }
-"variable" = { fg = "white", modifiers = ["dim"] }
+# "type.builtin" = "yellow"
+"variable" = { fg = "light-gray" }
 "variable.parameter" = { fg = "red" }
 "variable.other.member" = { fg = "light-cyan" }
 
@@ -76,6 +78,7 @@
 "diff.minus" = "light-red"
 
 "ui.gutter" = "gray"
+"ui.debug.breakpoint" = "red"
 "info" = "light-blue"
 "hint" = "light-gray"
 "debug" = "light-gray"
@@ -87,3 +90,6 @@
 "diagnostic.debug" = { underline = { color = "light-gray", style = "dashed" } }
 "diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } }
 "diagnostic.error" = { underline = { color = "light-red", style = "curl" } }
+
+[palette]
+"light-yellow" = "#e5c07b"
