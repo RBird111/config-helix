@@ -4,10 +4,13 @@ theme = "my-default"
 auto-save = true
 bufferline = "always"
 color-modes = true
-completion-timeout = 50
+completion-replace = true
+completion-timeout = 5
+completion-trigger-len = 1
+cursorline = true
 line-number = "relative"
-true-color = true
 shell = ["zsh", "-c"]
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
