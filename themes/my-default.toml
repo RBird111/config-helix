@@ -16,20 +16,17 @@
 "ui.popup" = { fg = "white", bg = "gray" }
 "ui.window" = { fg = "gray" }
 "ui.selection" = { bg = "gray" }
-"comment" = { fg = "light-gray", modifiers = ["dim"] }
 "ui.statusline" = { fg = "white", bg = "gray" }
 "ui.statusline.inactive" = { fg = "gray" }
 "ui.statusline.normal" = { fg = "black", bg = "blue" }
 "ui.statusline.insert" = { fg = "black", bg = "green" }
 "ui.statusline.select" = { fg = "black", bg = "magenta" }
 "ui.help" = { fg = "light-gray" }
-"ui.cursor" = { modifiers = ["reversed"] }
-"ui.cursor.match" = { fg = "yellow", underline = { color = "yellow", style = "line" }, modifiers = [
-  "bold",
-] }
 
-# "ui.cursor.primary" = { modifiers = ["reversed", "slow_blink"] }
-"ui.cursor.primary" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.primary" = { modifiers = ["reversed", "bold"] }
+# "ui.cursor.primary" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.cursor.match" = { fg = "light-yellow", modifiers = ["underlined", "bold"] }
 "ui.cursor.secondary" = { modifiers = ["reversed"] }
 "ui.virtual.ruler" = { bg = "gray" }
 "ui.virtual.whitespace" = "gray"
@@ -41,6 +38,7 @@
 "ui.virtual.jump-label" = { fg = "#FFA500", modifiers = ["bold", "underlined"] }
 
 "attribute" = "yellow"
+"comment" = { fg = "light-gray", modifiers = ["dim"] }
 "constant" = "yellow"
 "constant.numeric" = "yellow"
 "constant.character.escape" = "light-cyan"
@@ -49,14 +47,16 @@
 "keyword" = "light-magenta"
 "label" = { fg = "cyan", modifiers = ["bold", "underlined", "italic"] }
 "namespace" = "yellow"
-"special" = "light-blue"
+"punctuation.bracket" = "red"
+"punctuation.special" = "light-yellow"
+"special" = "light-gray"
 "string" = "light-green"
 "string.special" = "cyan"
+"string.special.symbol" = "yellow"
 "string.regexp" = "yellow"
 "type" = "light-yellow"
-# "type.builtin" = "yellow"
+"type.builtin" = { fg = "light-yellow", modifiers = ["italic"] }
 "variable" = { fg = "light-gray" }
-"variable.parameter" = { fg = "red" }
 "variable.other.member" = { fg = "light-cyan" }
 
 "markup.heading" = "light-blue"
