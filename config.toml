@@ -64,3 +64,9 @@ f = ":fmt"
 o = ":config-open"
 r = [":w", ":config-reload"]
 t = ":open ~/.config/helix/themes/my-default.toml"
+
+[keys.normal.space.G]
+up = "move_line_up"
+left = "move_char_left"
+right = "move_char_right"
+down = "move_line_down"
