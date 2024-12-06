@@ -24,8 +24,7 @@
 "ui.help" = { fg = "light-gray" }
 
 "ui.cursor" = { modifiers = ["reversed"] }
-"ui.cursor.primary" = { modifiers = ["reversed", "bold"] }
-# "ui.cursor.primary" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "white", modifiers = ["reversed", "bold"] }
 "ui.cursor.match" = { fg = "light-yellow", modifiers = ["underlined", "bold"] }
 "ui.cursor.secondary" = { modifiers = ["reversed"] }
 "ui.virtual.ruler" = { bg = "gray" }
@@ -40,24 +39,42 @@
 "attribute" = "yellow"
 "comment" = { fg = "light-gray", modifiers = ["dim"] }
 "constant" = "yellow"
-"constant.numeric" = "yellow"
 "constant.character.escape" = "light-cyan"
+"constant.numeric" = "yellow"
 "constructor" = "light-blue"
 "function" = { fg = "light-blue", modifiers = ["bold"] }
 "keyword" = "light-magenta"
 "label" = { fg = "cyan", modifiers = ["bold", "underlined", "italic"] }
 "namespace" = "yellow"
-"punctuation.bracket" = "red"
+"operator" = "magenta"
+"punctuation.bracket" = "light-gray"
 "punctuation.special" = "light-yellow"
 "special" = "light-gray"
 "string" = "light-green"
+"string.regexp" = "yellow"
 "string.special" = "cyan"
 "string.special.symbol" = "yellow"
-"string.regexp" = "yellow"
-"type" = "light-yellow"
-"type.builtin" = { fg = "light-yellow", modifiers = ["italic"] }
-"variable" = { fg = "light-gray" }
+"type" = "yellow"
+"type.builtin" = "yellow"
+"variable" = { fg = "red" }
 "variable.other.member" = { fg = "light-cyan" }
+
+# "attribute" = "yellow"
+# "comment" = { fg = "light-gray", modifiers = ["dim"] }
+# "constant" = "yellow"
+# "constant.character.escape" = "cyan"
+# "constant.numeric" = "yellow"
+# "constructor" = "light-blue"
+# "function" = "light-blue"
+# "keyword" = "light-magenta"
+# "label" = "light-magenta"
+# "namespace" = "cyan"
+# "special" = "light-blue"
+# "string" = "light-green"
+# "string.special" = "cyan"
+# "type" = "light-yellow"
+# "variable" = "light-red"
+# "variable.other.member" = "cyan"
 
 "markup.heading" = "light-blue"
 "markup.list" = "light-red"

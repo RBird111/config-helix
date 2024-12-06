@@ -22,7 +22,7 @@ hidden = false
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
-center = ["file-base-name", "file-modification-indicator"]
+center = ["file-name", "file-modification-indicator"]
 right = [
   "primary-selection-length",
   "separator",
