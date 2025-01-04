@@ -46,8 +46,8 @@
 "keyword" = "light-magenta"
 "label" = { fg = "cyan", modifiers = ["bold", "underlined", "italic"] }
 "namespace" = "yellow"
-"operator" = "magenta"
-"punctuation.bracket" = "light-gray"
+"operator" = "light-magenta"
+"punctuation.bracket" = "light-magenta"
 "punctuation.special" = "light-yellow"
 "special" = "light-gray"
 "string" = "light-green"
@@ -56,7 +56,7 @@
 "string.special.symbol" = "yellow"
 "type" = "yellow"
 "type.builtin" = "yellow"
-"variable" = { fg = "red" }
+"variable" = "light-gray"
 "variable.other.member" = { fg = "light-cyan" }
 
 # "attribute" = "yellow"

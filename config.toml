@@ -8,6 +8,7 @@ completion-replace = true
 completion-timeout = 5
 completion-trigger-len = 1
 cursorline = true
+end-of-line-diagnostics = "hint"
 line-number = "relative"
 shell = ["zsh", "-c"]
 true-color = true
@@ -19,6 +20,9 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "version-control", "spacer", "diagnostics"]
@@ -57,7 +61,6 @@ C-w = ":w"
 q = ":wqa"
 x = ":bc"
 W = ":w"
-e = [":w", ":sh cargo run -q --color=always &> rifo"]
 
 [keys.normal.space.";"]
 f = ":fmt"

@@ -48,6 +48,7 @@ language-servers = ["svelteserver", "tailwindcss-ls"]
 
 [[language]]
 name = "perl"
+language-servers = ["perlnavigator"]
 file-types = ["pl", "pm", "t"]
 formatter = { command = "perltidy" }
 
@@ -58,6 +59,10 @@ command = "clippy"
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
+
+[[language]]
+name = "bash"
+language-servers = ["bash-language-server"]
 
 [[language]]
 name = "yaml"
