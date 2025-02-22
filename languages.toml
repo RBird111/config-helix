@@ -1,25 +1,23 @@
-[language-server.markdown-oxide]
-command = "markdown-oxide"
-
 [[language]]
-name = "markdown"
-language-servers = ["markdown-oxide"]
-
-[language-server.ruff]
-command = "ruff-lsp"
+name = "racket"
+formatter = { command = "raco", args = ["fmt"] }
+auto-format = true
 
 [[language]]
 name = "python"
 language-servers = ["pylsp", "ruff"]
 auto-format = true
 
-[language-server.sql-language-server]
-command = "sql-language-server"
-args = ["up", "--method", "stdio"]
+[language-server.ruff]
+command = "ruff-lsp"
 
 [[language]]
 name = "sql"
 language-servers = ["sql-language-server"]
+
+[language-server.sql-language-server]
+command = "sql-language-server"
+args = ["up", "--method", "stdio"]
 
 [[language]]
 name = "toml"

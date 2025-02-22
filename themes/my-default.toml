@@ -95,7 +95,7 @@
 "diff.minus" = "light-red"
 
 "ui.gutter" = "gray"
-"ui.debug.breakpoint" = "red"
+"ui.debug.breakpoint" = "blue"
 "info" = "light-blue"
 "hint" = "light-gray"
 "debug" = "light-gray"
