@@ -41,7 +41,7 @@
 "constant" = "yellow"
 "constant.character.escape" = "light-cyan"
 "constant.numeric" = "yellow"
-"constructor" = "light-blue"
+"constructor" = "light-cyan"
 "function" = { fg = "light-blue", modifiers = ["bold"] }
 "keyword" = "light-magenta"
 "label" = { fg = "cyan", modifiers = ["bold", "underlined", "italic"] }

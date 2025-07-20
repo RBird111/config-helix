@@ -64,6 +64,7 @@ W = ":w"
 
 [keys.normal.space.";"]
 f = ":fmt"
+l = ":open ~/.config/helix/languages.toml"
 o = ":config-open"
 r = [":w", ":config-reload"]
 t = ":open ~/.config/helix/themes/my-default.toml"

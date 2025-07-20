@@ -1,7 +1,7 @@
 [[language]]
 name = "racket"
 formatter = { command = "raco", args = ["fmt"] }
-auto-format = true
+auto-format = false
 
 [[language]]
 name = "python"
@@ -24,6 +24,71 @@ name = "toml"
 formatter = { command = "taplo", args = ["format", "-"] }
 auto-format = true
 
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"] }
+
+[[language]]
+name = "javascript"
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+auto-format = true
+
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+  "tailwindcss-ls",
+]
+
+[[language]]
+name = "tsx"
+auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+  "tailwindcss-ls",
+]
+
+[[language]]
+name = "jsx"
+auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+
+[[language]]
+name = "json"
+language-servers = [
+  { name = "vscode-json-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+
 [[language]]
 name = "html"
 language-servers = ["vscode-html-language-server", "tailwindcss-ls"]
@@ -33,22 +98,16 @@ name = "css"
 language-servers = ["vscode-css-language-server", "tailwindcss-ls"]
 
 [[language]]
-name = "jsx"
-language-servers = ["typescript-language-server", "tailwindcss-ls"]
-
-[[language]]
-name = "tsx"
-language-servers = ["typescript-language-server", "tailwindcss-ls"]
-
-[[language]]
 name = "svelte"
 language-servers = ["svelteserver", "tailwindcss-ls"]
 
 [[language]]
 name = "perl"
-language-servers = ["perlnavigator"]
-file-types = ["pl", "pm", "t"]
 formatter = { command = "perltidy" }
+
+[[language]]
+name = "rust"
+auto-format = false
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
@@ -57,10 +116,6 @@ command = "clippy"
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
-
-[[language]]
-name = "bash"
-language-servers = ["bash-language-server"]
 
 [[language]]
 name = "yaml"
@@ -77,3 +132,55 @@ validation = true
 [language-server.yaml-language-server.config.yaml.schemas]
 "https://json.schemastore.org/github-workflow.json" = ".github/workflows/*.{yml,yaml}"
 "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json" = "roles/{tasks,handlers}/*.{yml,yaml}"
+
+[[language]]
+name = "bash"
+file-types = [
+  "sh",
+  "bash",
+  "ash",
+  "dash",
+  "ksh",
+  "mksh",
+  "zsh",
+  "zshenv",
+  "zlogin",
+  "zlogout",
+  "zprofile",
+  "zshrc",
+  "eclass",
+  "ebuild",
+  "bazelrc",
+  "Renviron",
+  "zsh-theme",
+  "cshrc",
+  "tcshrc",
+  "bashrc_Apple_Terminal",
+  "zshrc_Apple_Terminal",
+  "bats",
+  { glob = "i3/config" },
+  { glob = "sway/config" },
+  { glob = "tmux.conf" },
+  { glob = ".bash_history" },
+  { glob = ".bash_login" },
+  { glob = ".bash_logout" },
+  { glob = ".bash_profile" },
+  { glob = ".bashrc" },
+  { glob = ".profile" },
+  { glob = ".zshenv" },
+  { glob = ".zlogin" },
+  { glob = ".zlogout" },
+  { glob = ".zprofile" },
+  { glob = ".zshrc" },
+  { glob = ".zimrc" },
+  { glob = "APKBUILD" },
+  { glob = ".bash_aliases" },
+  { glob = ".Renviron" },
+  { glob = ".xprofile" },
+  { glob = ".xsession" },
+  { glob = ".xsessionrc" },
+  { glob = ".yashrc" },
+  { glob = ".yash_profile" },
+  { glob = ".hushlogin" },
+]
+shebangs = ["sh", "bash", "dash", "zsh", "bats"]
