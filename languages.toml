@@ -14,6 +14,17 @@ command = "ruff-lsp"
 [[language]]
 name = "sql"
 language-servers = ["sql-language-server"]
+formatter = { command = "sqlformat", args = [
+  "--reindent",
+  "--indent_width",
+  "2",
+  "--keywords",
+  "upper",
+  "--identifiers",
+  "lower",
+  "-",
+] }
+auto-format = true
 
 [language-server.sql-language-server]
 command = "sql-language-server"

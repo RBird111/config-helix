@@ -3,9 +3,8 @@
 
 "ui.background" = { fg = "white" }
 "ui.background.separator" = { fg = "gray" }
-"ui.bufferline" = { fg = "light-gray", bg = "light-black" }
+"ui.bufferline" = { fg = "light-gray" }
 "ui.bufferline.active" = { fg = "black", bg = "blue" }
-"ui.bufferline.background" = { bg = "light-black" }
 "ui.text" = { fg = "light-gray" }
 "ui.text.focus" = { fg = "white" }
 "ui.menu" = { fg = "white", bg = "gray" }
