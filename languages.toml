@@ -14,17 +14,7 @@ command = "ruff-lsp"
 [[language]]
 name = "sql"
 language-servers = ["sql-language-server"]
-formatter = { command = "sqlformat", args = [
-  "--reindent",
-  "--indent_width",
-  "2",
-  "--keywords",
-  "upper",
-  "--identifiers",
-  "lower",
-  "-",
-] }
-auto-format = true
+formatter = { command = "sqlfluff", args = ["format", "-"] }
 
 [language-server.sql-language-server]
 command = "sql-language-server"
@@ -111,6 +101,17 @@ language-servers = ["vscode-css-language-server", "tailwindcss-ls"]
 [[language]]
 name = "svelte"
 language-servers = ["svelteserver", "tailwindcss-ls"]
+
+[[language]]
+name = "vue"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "vue"] }
+language-servers = ["typescript-language-server", "tailwindcss-ls"]
+
+[[language-server.typescript-language-server.config.plugins]]
+name = "@vue/typescript-plugin"
+location = "/home/rburd/.nvm/versions/node/v24.11.1/lib/node_modules/@vue/typescript-plugin"
+languages = ["vue"]
 
 [[language]]
 name = "perl"
